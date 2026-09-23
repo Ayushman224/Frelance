@@ -1,5 +1,8 @@
+import { whatsappUrl } from "@/data/site";
 import { useContactIntent } from "@/lib/contactIntent";
+import { Link } from "@/lib/router";
 import { Button } from "@/components/ui/Button";
+import { Icon } from "@/components/ui/Icon";
 import { Container } from "@/components/ui/Section";
 import { HeroVisual } from "./HeroVisual";
 
@@ -42,10 +45,24 @@ export function Hero() {
             <Button size="lg" icon="arrow-right" onClick={() => requestContact()}>
               Get a Free Consultation
             </Button>
-            <Button size="lg" variant="dark-outline" to="/#work">
-              View My Work
+            <Button
+              size="lg"
+              variant="dark-outline"
+              href={whatsappUrl}
+              external
+              iconLeft="whatsapp"
+              aria-label="Chat on WhatsApp (opens in a new tab)"
+            >
+              Chat on WhatsApp
             </Button>
           </div>
+          <Link
+            to="/#work"
+            className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-400 underline-offset-4 transition-colors hover:text-white hover:underline"
+          >
+            View my work
+            <Icon name="arrow-right" className="size-4" />
+          </Link>
 
           <ul className="mt-10 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm font-medium text-slate-400" aria-label="Services offered">
             {credibility.map((c, i) => (

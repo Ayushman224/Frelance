@@ -1,3 +1,4 @@
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { useDocumentMeta } from "@/hooks/useDocumentMeta";
 import { About } from "@/sections/About";
 import { AiAgent } from "@/sections/AiAgent";
@@ -35,6 +36,7 @@ export default function HomePage() {
       <WhyMe />
       <Faq />
       <Contact />
+      <WhatsAppButton />
     </>
   );
 }
