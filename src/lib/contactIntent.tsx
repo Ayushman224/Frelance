@@ -7,9 +7,9 @@ export type BudgetCurrency = "USD" | "INR";
 export interface ContactPrefill {
   need?: ServiceNeed;
   message?: string;
-  /** Switches the budget dropdown to this currency's ranges. */
+  /** Chooses the currency used in the budget field's example text. */
   currency?: BudgetCurrency;
-  /** Must match one of the budget options for the chosen currency. */
+  /** Applied only if the visitor hasn't typed a budget yet. */
   budget?: string;
   /** Applied only if the visitor hasn't typed a country yet. */
   country?: string;

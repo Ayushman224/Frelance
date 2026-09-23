@@ -13,9 +13,9 @@ import { Spinner } from "@/components/ui/Spinner";
 import { Container, Section } from "@/components/ui/Section";
 
 const countries = ["United States", "Canada", "United Kingdom", "Australia", "United Arab Emirates", "New Zealand", "Ireland", "Singapore", "India"];
-const budgetOptions: Record<BudgetCurrency, string[]> = {
-  USD: ["Under $500", "$500 – $1,000", "$1,000 – $2,500", "$2,500+", "Not sure yet"],
-  INR: ["Under ₹20,000", "₹20,000 – ₹50,000", "₹50,000 – ₹1,00,000", "₹1,00,000+", "Not sure yet"],
+const budgetPlaceholders: Record<BudgetCurrency, string> = {
+  USD: "e.g. around $800, or “not sure yet”",
+  INR: "e.g. around ₹25,000, or “not sure yet”",
 };
 const fieldOrder: (keyof ContactFormValues)[] = ["name", "businessName", "email", "country", "website", "need", "budget", "message"];
 
@@ -39,7 +39,6 @@ export function Contact() {
   const statusRef = useRef<HTMLDivElement>(null);
   const lastPrefillMessage = useRef("");
   const [currency, setCurrency] = useState<BudgetCurrency>("USD");
-  const budgets = budgetOptions[currency];
 
   useEffect(() => {
     if (!nonce || !prefill) return;
@@ -49,8 +48,7 @@ export function Contact() {
       const canReplaceMessage = !v.message.trim() || v.message === lastPrefillMessage.current;
       const next = { ...v };
       if (prefill.need) next.need = prefill.need;
-      if (nextCurrency && !budgetOptions[nextCurrency].includes(next.budget)) next.budget = "";
-      if (prefill.budget) next.budget = prefill.budget;
+      if (prefill.budget && !v.budget.trim()) next.budget = prefill.budget;
       if (prefill.country && !v.country.trim()) next.country = prefill.country;
       if (prefill.message && canReplaceMessage) {
         next.message = prefill.message;
@@ -195,14 +193,15 @@ export function Contact() {
                     </option>
                   ))}
                 </SelectField>
-                <SelectField {...fieldProps("budget")} label="Budget" optional wrapperClassName="sm:col-span-2">
-                  <option value="">Prefer not to say</option>
-                  {budgets.map((b) => (
-                    <option key={b} value={b}>
-                      {b}
-                    </option>
-                  ))}
-                </SelectField>
+                <TextField
+                  {...fieldProps("budget")}
+                  label="Budget"
+                  optional
+                  wrapperClassName="sm:col-span-2"
+                  placeholder={budgetPlaceholders[currency]}
+                  autoComplete="off"
+                  maxLength={80}
+                />
                 <TextareaField
                   {...fieldProps("message")}
                   label="Message"
