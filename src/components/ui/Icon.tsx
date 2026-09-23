@@ -196,6 +196,12 @@ const stroke = {
   ),
   minus: <path d="M5 12h14" />,
   plus: <path d="M12 5v14M5 12h14" />,
+  eye: (
+    <>
+      <path d="M2.06 12.35a1 1 0 0 1 0-.7C3.42 8.1 7.36 5 12 5s8.58 3.1 9.94 6.65a1 1 0 0 1 0 .7C20.58 15.9 16.64 19 12 19s-8.58-3.1-9.94-6.65" />
+      <circle cx="12" cy="12" r="3" />
+    </>
+  ),
 } satisfies Record<string, ReactNode>;
 
 const filled = {

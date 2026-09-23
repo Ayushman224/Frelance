@@ -10,7 +10,7 @@ import { Container, Section, SectionHeader } from "@/components/ui/Section";
 export function Pricing() {
   const { requestContact } = useContactIntent();
   const discuss = (plan: PricingPlan) =>
-    requestContact({ need: plan.need, message: `I'm interested in the ${plan.name} package (starting from ${plan.price}${plan.period ?? ""}).` });
+    requestContact({ need: plan.need, message: `I'm interested in the ${plan.name} package. Could you share pricing for my project? ` });
 
   return (
     <Section id="pricing" labelledBy="pricing-title">
@@ -18,8 +18,8 @@ export function Pricing() {
         <SectionHeader
           id="pricing-title"
           eyebrow="Pricing"
-          title="Clear starting points. Tailored to your project."
-          description="Every business is different, so these are starting prices — not fixed packages. You'll get a clear quote before any work begins."
+          title="Clear packages. Tailored to your project."
+          description="Every business is different, so pricing is based on your requirements — not fixed packages. Tell me what you need and you'll get a clear quote before any work begins."
         />
 
         <div className="mt-14 grid gap-6 lg:grid-cols-3">
@@ -42,11 +42,11 @@ export function Pricing() {
               <h3 id={`plan-${plan.id}`} className={cn("font-sans text-sm font-semibold tracking-[0.12em] uppercase", plan.recommended ? "text-brand-300" : "text-brand-700")}>
                 {plan.name}
               </h3>
-              <p className="mt-5 flex items-baseline gap-2">
-                <span className={cn("text-sm", plan.recommended ? "text-slate-400" : "text-slate-500")}>Starting from</span>
-                <span className={cn("font-display text-4xl font-extrabold tracking-tight", plan.recommended ? "text-white" : "text-slate-900")}>
-                  {plan.price}
+              <p className="mt-5">
+                <span className={cn("block font-display text-3xl font-extrabold tracking-tight", plan.recommended ? "text-white" : "text-slate-900")}>
+                  Custom quote
                 </span>
+                <span className={cn("mt-1 block text-sm", plan.recommended ? "text-brand-300" : "text-brand-700")}>Contact to know pricing</span>
               </p>
               <p className={cn("mt-3 text-sm leading-relaxed", plan.recommended ? "text-slate-400" : "text-slate-600")}>{plan.summary}</p>
               <ul className={cn("mt-7 space-y-3 border-t pt-7 text-sm", plan.recommended ? "border-white/10" : "border-slate-100")}>
@@ -67,9 +67,9 @@ export function Pricing() {
                   className="w-full"
                   icon="arrow-right"
                   onClick={() => discuss(plan)}
-                  aria-label={`Discuss your project — ${plan.name}`}
+                  aria-label={`Get a custom quote — ${plan.name}`}
                 >
-                  Discuss Your Project
+                  Get a Custom Quote
                 </Button>
               </div>
             </Reveal>
@@ -85,10 +85,9 @@ export function Pricing() {
               <h3 id="plan-maintenance" className="font-sans text-sm font-semibold tracking-[0.12em] text-brand-700 uppercase">
                 {maintenancePlan.name}
               </h3>
-              <p className="mt-3 flex items-baseline gap-2">
-                <span className="text-sm text-slate-500">Starting from</span>
-                <span className="font-display text-3xl font-extrabold text-slate-900">{maintenancePlan.price}</span>
-                <span className="text-sm text-slate-500">{maintenancePlan.period}</span>
+              <p className="mt-3 flex flex-wrap items-baseline gap-x-2">
+                <span className="font-display text-2xl font-extrabold text-slate-900">Monthly plan</span>
+                <span className="text-sm text-brand-700">Contact to know pricing</span>
               </p>
               <p className="mt-2 text-sm text-slate-600">{maintenancePlan.summary}</p>
             </div>
@@ -100,8 +99,8 @@ export function Pricing() {
                 </li>
               ))}
             </ul>
-            <Button variant="secondary" icon="arrow-right" onClick={() => discuss(maintenancePlan)} aria-label="Discuss your project — Maintenance">
-              Discuss Your Project
+            <Button variant="secondary" icon="arrow-right" onClick={() => discuss(maintenancePlan)} aria-label="Get a custom quote — Maintenance">
+              Get a Custom Quote
             </Button>
           </article>
         </Reveal>

@@ -61,16 +61,23 @@ export interface Project {
 
 export interface ProcessStep {
   number: string;
+  /** Short name shown on the workflow node, e.g. "Tell Me" */
+  short: string;
   title: string;
   description: string;
   icon: IconName;
+  points: string[];
+  /** Small tagline shown under the points */
+  label?: string;
+  /** Important clarification, e.g. about pricing or revisions */
+  note?: string;
+  /** Mini progression, e.g. Design → Development → Testing */
+  flow?: string[];
 }
 
 export interface PricingPlan {
   id: string;
   name: string;
-  price: string;
-  period?: string;
   summary: string;
   features: string[];
   recommended?: boolean;

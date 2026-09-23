@@ -45,6 +45,8 @@
   html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
+    /* Animated demos above the viewport change height; anchoring adjustments would cancel in-progress smooth scrolls. */
+    overflow-anchor: none;
   }
   body {
     @apply bg-white font-sans text-slate-700 antialiased;
