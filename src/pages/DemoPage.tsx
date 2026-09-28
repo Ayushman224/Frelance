@@ -16,8 +16,8 @@ const demoNav = [
 
 export default function DemoPage() {
   useDocumentMeta({
-    title: "Austin GreenScape — Demo Concept | Ayushman Tripathi",
-    description: "A fictional landscaping website concept designed by Ayushman Tripathi to demonstrate small-business web design. Not a client project.",
+    title: "Austin GreenScape — Demo Concept | Clitchly",
+    description: "A fictional landscaping website concept designed by Clitchly to demonstrate small-business web design. Not a client project.",
     noIndex: true,
   });
 

@@ -19,7 +19,7 @@ export function Pricing() {
           id="pricing-title"
           eyebrow="Pricing"
           title="Clear packages. Tailored to your project."
-          description="Every business is different, so pricing is based on your requirements — not fixed packages. Tell me what you need and you'll get a clear quote before any work begins."
+          description="Every business is different, so pricing is based on your requirements — not fixed packages. Tell us what you need and you'll get a clear quote before any work begins."
         />
 
         <div className="mt-14 grid gap-6 lg:grid-cols-3">

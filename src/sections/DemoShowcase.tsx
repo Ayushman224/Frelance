@@ -28,7 +28,7 @@ export function DemoShowcase() {
           <Reveal>
             <DemoLabel />
             <h2 id="demo-title" className="mt-5 text-3xl font-bold text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">
-              See what I can build for your business.
+              See what we can build for your business.
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-slate-600">
               I create custom business websites around how your customers actually search, compare and get in touch. Here's a

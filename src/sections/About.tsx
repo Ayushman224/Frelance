@@ -16,25 +16,14 @@ export function About() {
           <Reveal className="mx-auto w-full max-w-sm lg:max-w-none">
             <figure className="relative">
               <div className="absolute -inset-3 -z-10 rotate-2 rounded-[2rem] bg-gradient-to-br from-brand-100 to-slate-100" aria-hidden="true" />
-              {site.portrait ? (
-                <img
-                  src={site.portrait}
-                  alt={`Portrait of ${site.name}`}
-                  loading="lazy"
-                  className="aspect-[4/5] w-full rounded-[1.75rem] object-cover shadow-lift"
-                />
-              ) : (
-                <div
-                  role="img"
-                  aria-label={`${site.name} — portrait coming soon`}
-                  className="relative flex aspect-[4/5] w-full items-center justify-center overflow-hidden rounded-[1.75rem] bg-gradient-to-br from-ink-900 via-ink-800 to-brand-900 shadow-lift"
-                >
-                  <div className="bg-grid absolute inset-0" aria-hidden="true" />
-                  <span className="relative font-display text-7xl font-extrabold tracking-tight text-white/90" aria-hidden="true">
-                    AT
-                  </span>
-                </div>
-              )}
+              <div
+                role="img"
+                aria-label={`${site.name} logo`}
+                className="relative flex aspect-[4/5] w-full items-center justify-center overflow-hidden rounded-[1.75rem] bg-gradient-to-br from-ink-900 via-ink-800 to-brand-900 shadow-lift"
+              >
+                <div className="bg-grid absolute inset-0" aria-hidden="true" />
+                <img src={site.logo} alt="" width={160} height={160} className="relative size-40 rounded-[1.75rem] object-cover shadow-lift" />
+              </div>
               <figcaption className="absolute inset-x-4 bottom-4 rounded-2xl border border-white/60 bg-white/90 px-4 py-3 shadow-soft backdrop-blur">
                 <p className="text-sm font-semibold text-slate-900">{site.name}</p>
                 <p className="text-xs text-slate-500">{site.title}</p>
@@ -48,20 +37,20 @@ export function About() {
               About
             </p>
             <h2 id="about-title" className="text-3xl font-bold sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">
-              Hi, I'm Ayushman.
+              We are Clitchly.
             </h2>
             <div className="mt-6 space-y-4 text-[1.05rem] leading-relaxed text-slate-600">
               <p>
-                I'm a web developer and automation engineer focused on helping businesses build better digital experiences and
-                automate repetitive work.
+                Clitchly builds professional websites, AI agents and automation systems that help businesses create better digital
+                experiences and spend less time on repetitive work.
               </p>
               <p>
-                My work spans front-end development with React and TypeScript, backend and API work with Node.js, and data and
+                Our work spans front-end development with React and TypeScript, backend and API work with Node.js, and data and
                 automation workflows with Python and SQL — as well as WordPress sites for businesses that want to manage content
-                themselves. I also deploy to cloud platforms like AWS and build AI agents that plug into real business processes.
+                themselves. We also deploy to cloud platforms like AWS and build AI agents that plug into real business processes.
               </p>
               <p className="font-medium text-slate-800">
-                I work directly with clients and focus on clear communication, practical solutions and reliable delivery.
+                We work directly with clients and focus on clear communication, practical solutions and reliable delivery.
               </p>
             </div>
 
@@ -80,7 +69,7 @@ export function About() {
 
             <div className="mt-8 flex flex-wrap gap-3">
               <Button icon="arrow-right" onClick={() => requestContact()}>
-                Work with me
+                Work with us
               </Button>
               <Button href={site.social.linkedin} external variant="outline" iconLeft="linkedin" aria-label="LinkedIn profile (opens in a new tab)">
                 LinkedIn

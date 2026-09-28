@@ -37,7 +37,7 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-pretty text-slate-400">
-            I build professional websites, AI-powered agents and business automation systems that help small businesses turn
+            Clitchly builds professional websites, AI-powered agents and business automation systems that help small businesses turn
             online visitors into real enquiries.
           </p>
 

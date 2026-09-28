@@ -1,4 +1,4 @@
-# Ayushman Tripathi — Freelance Website
+# Clitchly — Freelance Website
 
 Business website for acquiring small-business clients for web development, AI agents, automation, hosting and maintenance.
 
@@ -17,7 +17,7 @@ npm run preview    # serve the production build locally
 
 | What | Where |
 | --- | --- |
-| Email, domain, WhatsApp number, LinkedIn, GitHub, portrait | `src/data/site.ts` |
+| LinkedIn, GitHub | `src/data/site.ts` |
 | Domain in canonical / Open Graph / JSON-LD tags | `index.html` |
 | Domain in `robots.txt` and `sitemap.xml` | `public/` |
 | Project descriptions, screenshots, live URLs | `src/data/projects.ts` |

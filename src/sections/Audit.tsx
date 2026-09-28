@@ -40,11 +40,11 @@ export function Audit() {
               Already have a website?
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-slate-600">
-              I can identify what may be stopping visitors from becoming customers.
+              Clitchly can identify what may be stopping visitors from becoming customers.
             </p>
             <p className="mt-4 text-[0.95rem] leading-relaxed text-slate-600">
-              Choose the areas you care about most. I'll review your site and send back clear, practical recommendations — no
-              obligation to hire me.
+              Choose the areas you care about most. We'll review your site and send back clear, practical recommendations — no
+              obligation to hire us.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
               <Button size="lg" icon="arrow-right" onClick={requestReview}>

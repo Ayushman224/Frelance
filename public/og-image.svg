@@ -16,9 +16,9 @@
   <rect width="1200" height="630" fill="url(#grid)"/>
   <rect width="1200" height="630" fill="url(#glow)"/>
   <rect x="80" y="80" width="72" height="72" rx="18" fill="url(#mark)"/>
-  <text x="116" y="128" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="800" fill="#fff">AT</text>
-  <text x="176" y="112" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#fff">Ayushman Tripathi</text>
-  <text x="176" y="142" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#94a3b8">Web Developer &amp; Automation Engineer</text>
+  <text x="116" y="128" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="800" fill="#fff">C</text>
+  <text x="176" y="112" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#fff">Clitchly</text>
+  <text x="176" y="142" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#94a3b8">Web Development &amp; Automation</text>
   <text x="80" y="310" font-family="Segoe UI, Arial, sans-serif" font-size="64" font-weight="800" fill="#fff">Websites that help small</text>
   <text x="80" y="388" font-family="Segoe UI, Arial, sans-serif" font-size="64" font-weight="800" fill="#90b4ff">businesses get more customers.</text>
   <text x="80" y="520" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#cbd5e1">Web Development  &#8226;  Automation  &#8226;  AI Agents  &#8226;  Hosting</text>

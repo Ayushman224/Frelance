@@ -21,7 +21,7 @@ export function Faq() {
               <a href={mailtoUrl} className="font-semibold text-brand-700 underline-offset-4 hover:underline">
                 {site.email}
               </a>{" "}
-              and I'll get back to you.
+              and we'll get back to you.
             </p>
           </Reveal>
         </div>

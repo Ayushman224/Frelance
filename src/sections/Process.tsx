@@ -31,7 +31,7 @@ export function Process() {
         <SectionHeader
           id="process-title"
           tone="dark"
-          eyebrow="How I work"
+          eyebrow="How we work"
           title="How We Turn Your Idea Into a Working Solution"
           description="From the first conversation to launch and ongoing support, every project follows a clear process."
         />
@@ -376,13 +376,13 @@ function ProcessCta() {
         </span>
         <h3 className="mt-6 text-2xl font-bold text-white sm:text-3xl">Ready to get started?</h3>
         <p className="mx-auto mt-3 max-w-xl leading-relaxed text-slate-400">
-          Tell me what you're building, what isn't working or what you'd like to improve.
+          Tell us what you're building, what isn't working or what you'd like to improve.
         </p>
         <Button to="/#contact" size="lg" icon="arrow-right" className="mt-8">
           Discuss Your Requirements
         </Button>
         <p className="mx-auto mt-5 max-w-md text-sm text-slate-500">
-          Let's start with a conversation. I'll help define the right solution for your business.
+          Let's start with a conversation. We'll help define the right solution for your business.
         </p>
       </div>
     </Reveal>

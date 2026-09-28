@@ -4,15 +4,13 @@ import { site } from "@/data/site";
 
 export function LogoMark({ className }: { className?: string }) {
   return (
-    <span
-      className={cn(
-        "relative flex size-9 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 font-display text-sm font-bold text-white shadow-[inset_0_1px_0_rgb(255_255_255/0.25)]",
-        className,
-      )}
-      aria-hidden="true"
-    >
-      AT
-    </span>
+    <img
+      src={site.logo}
+      alt=""
+      width={36}
+      height={36}
+      className={cn("size-9 rounded-xl object-cover shadow-[inset_0_1px_0_rgb(255_255_255/0.25)]", className)}
+    />
   );
 }
 

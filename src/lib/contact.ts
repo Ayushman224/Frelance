@@ -72,7 +72,7 @@ export async function submitContactRequest(values: ContactFormValues): Promise<S
       signal: controller.signal,
     });
     if (!res.ok) {
-      return { status: "error", message: `The server responded with an error (${res.status}). Please try again or email me directly.` };
+      return { status: "error", message: `The server responded with an error (${res.status}). Please try again or email us directly.` };
     }
     return { status: "success" };
   } catch (err) {
@@ -81,7 +81,7 @@ export async function submitContactRequest(values: ContactFormValues): Promise<S
       status: "error",
       message: aborted
         ? "The request timed out. Please check your connection and try again."
-        : "Couldn't send your request. Please check your connection or email me directly.",
+        : "Couldn't send your request. Please check your connection or email us directly.",
     };
   } finally {
     window.clearTimeout(timeout);

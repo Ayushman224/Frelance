@@ -154,7 +154,7 @@ export const whyMe: ValueCard[] = [
   {
     title: "Practical Solutions",
     icon: "check-circle",
-    description: "I recommend what your business actually needs, not the most complicated option.",
+    description: "We recommend what your business actually needs, not the most complicated option.",
   },
   {
     title: "Modern Technology",
@@ -169,7 +169,7 @@ export const whyMe: ValueCard[] = [
   {
     title: "Ongoing Support",
     icon: "lifebuoy",
-    description: "Launch is the start. I stay available for updates, fixes and improvements.",
+    description: "Launch is the start. We stay available for updates, fixes and improvements.",
   },
 ];
 
@@ -196,22 +196,22 @@ export const faqs: FaqItem[] = [
   {
     question: "Can you improve my existing website?",
     answer:
-      "Yes. I can redesign it, improve mobile experience and speed, fix bugs, or add better quote and contact flows — without necessarily rebuilding from scratch.",
+      "Yes. We can redesign it, improve mobile experience and speed, fix bugs, or add better quote and contact flows — without necessarily rebuilding from scratch.",
   },
   {
     question: "Can you work with my existing domain?",
     answer:
-      "Yes. You keep full ownership of your domain. I'll connect the new website to it and configure DNS, SSL and email records carefully so nothing breaks.",
+      "Yes. You keep full ownership of your domain. We'll connect the new website to it and configure DNS, SSL and email records carefully so nothing breaks.",
   },
   {
     question: "Can you host the website?",
     answer:
-      "Yes. I can set up reliable hosting and deployment for you, or deploy to a hosting provider you already use. Hosting support is included in the maintenance plan.",
+      "Yes. We can set up reliable hosting and deployment for you, or deploy to a hosting provider you already use. Hosting support is included in the maintenance plan.",
   },
   {
     question: "Can you add an AI chatbot?",
     answer:
-      "Yes. I build AI website agents that answer common questions from your own business information, qualify enquiries and pass leads to you. They're configured to hand off to you rather than guess.",
+      "Yes. We build AI website agents that answer common questions from your own business information, qualify enquiries and pass leads to you. They're configured to hand off to you rather than guess.",
   },
   {
     question: "Can you connect my website to CRM or Google Sheets?",
@@ -226,6 +226,6 @@ export const faqs: FaqItem[] = [
   {
     question: "Can you work with businesses outside India?",
     answer:
-      "Yes — international clients are my focus, including the USA, Canada, UK, Australia and UAE. I work remotely, schedule calls around your time zone and communicate in clear English.",
+      "Yes — international clients are a focus, including the USA, Canada, UK, Australia and UAE. We work remotely, schedule calls around your time zone and communicate in clear English.",
   },
 ];

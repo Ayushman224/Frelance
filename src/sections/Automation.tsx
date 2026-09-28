@@ -77,7 +77,7 @@ export function Automation() {
             <Icon name="workflow" className="size-7 text-brand-300" />
             <p className="mt-4 font-display text-xl font-semibold text-white">Have a repetitive task that eats your week?</p>
             <p className="mt-2 text-sm leading-relaxed">
-              Tell me how it works today. I'll suggest a practical way to automate it with the tools you already use.
+              Tell us how it works today. We'll suggest a practical way to automate it with the tools you already use.
             </p>
             <Button className="mt-6" icon="arrow-right" onClick={() => requestContact({ need: "automation" })}>
               Discuss an Automation

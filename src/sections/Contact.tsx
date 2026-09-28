@@ -20,7 +20,7 @@ const budgetPlaceholders: Record<BudgetCurrency, string> = {
 const fieldOrder: (keyof ContactFormValues)[] = ["name", "businessName", "email", "country", "website", "need", "budget", "message"];
 
 const nextSteps = [
-  "I read your request and reply personally",
+  "We read your request and reply personally",
   "We have a short call to understand your goals",
   "You receive a clear proposal, timeline and quote",
 ];
@@ -127,7 +127,7 @@ export function Contact() {
               <h2 id="contact-title" className="text-3xl font-bold text-balance text-white sm:text-4xl">
                 Have a project in mind?
               </h2>
-              <p className="mt-4 text-lg leading-relaxed">Tell me what you're trying to build, improve or automate.</p>
+              <p className="mt-4 text-lg leading-relaxed">Tell us what you're trying to build, improve or automate.</p>
 
               <h3 className="mt-10 font-sans text-sm font-semibold text-white">What happens next</h3>
               <ol className="mt-4 space-y-4">
@@ -142,7 +142,7 @@ export function Contact() {
               </ol>
 
               <div className="mt-10 border-t border-white/10 pt-8">
-                <p className="text-sm font-semibold text-white">Or email me directly</p>
+                <p className="text-sm font-semibold text-white">Or email us directly</p>
                 <a href={mailtoUrl} className="mt-2 inline-flex items-center gap-2 text-base font-medium text-brand-300 hover:text-brand-200">
                   <Icon name="mail" className="size-4" />
                   {site.email}
@@ -164,7 +164,7 @@ export function Contact() {
                 </span>
                 <h3 className="mt-6 text-2xl font-bold">Thanks — your request has been sent.</h3>
                 <p className="mt-3 max-w-md text-slate-600">
-                  I'll review the details and reply to <strong className="text-slate-900">{values.email || "your email"}</strong>, usually
+                  We'll review the details and reply to <strong className="text-slate-900">{values.email || "your email"}</strong>, usually
                   within one business day.
                 </p>
                 <Button variant="outline" className="mt-8" onClick={reset}>
@@ -206,7 +206,7 @@ export function Contact() {
                   {...fieldProps("message")}
                   label="Message"
                   wrapperClassName="sm:col-span-2"
-                  placeholder="Tell me about your business, what you'd like to build or improve, and any deadlines."
+                  placeholder="Tell us about your business, what you'd like to build or improve, and any deadlines."
                   maxLength={3000}
                 />
 
@@ -231,7 +231,7 @@ export function Contact() {
                     <p className="mt-1.5 pl-6 leading-relaxed">
                       {status === "error"
                         ? serverError
-                        : "Please send the same details from your own email app with one click, or message me on WhatsApp."}
+                        : "Please send the same details from your own email app with one click, or message us on WhatsApp."}
                     </p>
                     <div className="mt-4 flex flex-wrap gap-2 pl-6">
                       <Button href={buildMailtoLink(values)} size="sm" iconLeft="mail">
