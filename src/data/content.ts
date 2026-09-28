@@ -25,6 +25,12 @@ export const problems: ProblemCard[] = [
     description: "Your site isn't working for you after hours, and it's hard to update when things change.",
     points: ["No AI assistant", "Hard to maintain", "No lead tracking"],
   },
+  {
+    title: "Invisible on Google",
+    icon: "search",
+    description: "People search for the service you already offer, but your business doesn't show up.",
+    points: ["Weak or missing SEO", "No Google Business Profile", "Competitors ranking instead"],
+  },
 ];
 
 export const auditItems: AuditItem[] = [
@@ -49,7 +55,7 @@ export const processSteps: ProcessStep[] = [
       "What does your business do?",
       "What are you trying to improve?",
       "Do you need a new website or redesign?",
-      "Do you need SEO, AI or automation?",
+      "Do you need SEO, ads, social media, AI or automation?",
       "What problems are you currently facing?",
     ],
     label: "Start with a conversation.",
@@ -65,6 +71,7 @@ export const processSteps: ProcessStep[] = [
       "Target customers",
       "Current website/system",
       "Required pages and functionality",
+      "Ads, social media and SEO requirements",
       "Existing tools and workflows",
       "Technical requirements",
     ],
@@ -76,7 +83,7 @@ export const processSteps: ProcessStep[] = [
     title: "You Get a Custom Proposal",
     icon: "file",
     description: "Your project is scoped around your actual requirements rather than forcing you into a fixed package.",
-    points: ["Project scope", "Features", "Integrations", "SEO requirements", "AI / automation requirements", "Timeline", "Final project price"],
+    points: ["Project scope", "Features", "Integrations", "SEO, ads and social requirements", "AI / automation requirements", "Timeline", "Final project price"],
     note: "Starting prices are shown on the pricing page. The final quote is based on the agreed requirements.",
   },
   {
@@ -164,7 +171,7 @@ export const whyMe: ValueCard[] = [
   {
     title: "Business-Focused Development",
     icon: "target",
-    description: "Every page and feature is designed around turning visitors into enquiries.",
+    description: "Every page, campaign and post is designed around turning visitors into enquiries — including ads, social and SEO when you need them.",
   },
   {
     title: "Ongoing Support",
@@ -185,6 +192,9 @@ export const skills = [
   "APIs",
   "Automation",
   "AI Agents",
+  "SEO",
+  "Google Ads",
+  "Social Media",
 ];
 
 export const faqs: FaqItem[] = [
@@ -222,6 +232,21 @@ export const faqs: FaqItem[] = [
     question: "Do you provide ongoing maintenance?",
     answer:
       "Yes. Monthly maintenance covers hosting support, updates, bug fixes, small content changes and monitoring, so your site stays healthy after launch.",
+  },
+  {
+    question: "Do you run Google or Instagram ads?",
+    answer:
+      "Yes. We can set up and manage campaigns. Ad spend is paid by you to Google/Meta. We quote our management fee separately. Results depend on budget, offer and market.",
+  },
+  {
+    question: "Do you manage social media accounts?",
+    answer:
+      "Yes. We can plan content, design posts, publish on agreed platforms and report monthly. Extra platforms or paid boosting are quoted separately.",
+  },
+  {
+    question: "Can you get us to #1 on Google?",
+    answer:
+      "No honest provider can guarantee a specific ranking. We improve the technical, local and content foundations that help customers find you, and we report on visibility. Rankings still depend on competition and Google's systems.",
   },
   {
     question: "Can you work with businesses outside India?",

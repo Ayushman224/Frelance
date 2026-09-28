@@ -202,6 +202,14 @@ const stroke = {
       <circle cx="12" cy="12" r="3" />
     </>
   ),
+  share: (
+    <>
+      <circle cx="18" cy="5" r="3" />
+      <circle cx="6" cy="12" r="3" />
+      <circle cx="18" cy="19" r="3" />
+      <path d="M8.59 13.51 15.42 17.49M15.41 6.51 8.59 10.49" />
+    </>
+  ),
 } satisfies Record<string, ReactNode>;
 
 const filled = {

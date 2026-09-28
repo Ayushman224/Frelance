@@ -20,7 +20,7 @@ export function Problem() {
           description="Many small-business websites look fine but quietly lose customers — through slow pages, unclear next steps and enquiries that get handled by hand."
         />
 
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {problems.map((p, i) => (
             <Reveal
               key={p.title}
@@ -48,7 +48,7 @@ export function Problem() {
         <Reveal className="mt-10 overflow-hidden rounded-3xl bg-ink-950 p-8 sm:p-10">
           <div className="grid items-center gap-8 lg:grid-cols-[1.2fr_1fr]">
             <p className="font-display text-xl leading-snug font-semibold text-balance text-white sm:text-2xl">
-              I help turn a basic online presence into a system that{" "}
+              We help turn a basic online presence into a system that{" "}
               <span className="text-brand-300">attracts, informs and captures</span> potential customers.
             </p>
             <ol className="grid grid-cols-3 gap-3" aria-label="How a better website works">

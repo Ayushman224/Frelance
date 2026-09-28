@@ -200,6 +200,8 @@ export const quoteFactors = [
   "Booking systems",
   "Payment systems",
   "SEO",
+  "Ads",
+  "Social media",
   "Automation",
   "AI",
   "APIs",
@@ -228,6 +230,9 @@ export const comparisonRows: { feature: string; values: [ComparisonCell, Compari
   { feature: "Automation", values: [false, "Custom", true] },
   { feature: "CRM/API integrations", values: [false, "Custom", true] },
   { feature: "Custom workflows", values: [false, "Custom", true] },
+  { feature: "SEO / Google visibility", values: ["Custom", true, true] },
+  { feature: "Paid ads", values: [false, "Custom", "Custom"] },
+  { feature: "Social media", values: [false, "Custom", "Custom"] },
 ];
 
 export const carePlan = {
@@ -293,6 +298,9 @@ export const customExamples: { label: string; icon: IconName }[] = [
   { label: "Booking systems", icon: "calendar" },
   { label: "Payment systems", icon: "card" },
   { label: "Dashboards", icon: "chart" },
+  { label: "Paid ads management", icon: "target" },
+  { label: "Social media management", icon: "share" },
+  { label: "SEO / Google visibility", icon: "search" },
 ];
 
 export const quoteSteps = [

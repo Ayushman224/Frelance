@@ -13,6 +13,9 @@ export type ServiceNeed =
   | "ai-agent"
   | "automation"
   | "hosting-maintenance"
+  | "paid-ads"
+  | "social-media"
+  | "seo"
   | "other";
 
 export interface Service {

@@ -6,7 +6,7 @@ import { Icon } from "@/components/ui/Icon";
 import { Container } from "@/components/ui/Section";
 import { HeroVisual } from "./HeroVisual";
 
-const credibility = ["Web Development", "Automation", "AI Agents", "Hosting"];
+const credibility = ["Websites", "SEO", "Paid Ads", "Social Media", "AI Agents", "Automation"];
 
 export function Hero() {
   const { requestContact } = useContactIntent();
@@ -37,8 +37,8 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-pretty text-slate-400">
-            Clitchly builds professional websites, AI-powered agents and business automation systems that help small businesses turn
-            online visitors into real enquiries.
+            Clitchly builds websites, runs ads, handles social media and improves Google visibility — so small businesses can be found
+            online and turn visitors into real enquiries.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -60,7 +60,7 @@ export function Hero() {
             to="/#work"
             className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-slate-400 underline-offset-4 transition-colors hover:text-white hover:underline"
           >
-            View my work
+            View our work
             <Icon name="arrow-right" className="size-4" />
           </Link>
 

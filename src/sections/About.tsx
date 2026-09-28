@@ -42,7 +42,8 @@ export function About() {
             <div className="mt-6 space-y-4 text-[1.05rem] leading-relaxed text-slate-600">
               <p>
                 Clitchly builds professional websites, AI agents and automation systems that help businesses create better digital
-                experiences and spend less time on repetitive work.
+                experiences and spend less time on repetitive work. We also run paid ads, manage social media and improve how
+                customers find you on Google.
               </p>
               <p>
                 Our work spans front-end development with React and TypeScript, backend and API work with Node.js, and data and

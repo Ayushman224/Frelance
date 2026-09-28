@@ -11,7 +11,7 @@ export function WhyMe() {
         <SectionHeader
           id="why-title"
           eyebrow="Why work with us"
-          title="A development partner who understands small business."
+          title="A partner who understands small business."
         />
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-6">
           {whyMe.map((item, i) => (

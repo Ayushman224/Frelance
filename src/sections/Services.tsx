@@ -14,7 +14,7 @@ export function Services() {
           id="services-title"
           eyebrow="Services"
           title="Everything you need to build a stronger online presence."
-          description="From a first website to AI and automation — built, launched and looked after by one developer you can talk to directly."
+          description="Websites, ads, social media, SEO, AI and automation — built and looked after by one team you can talk to directly."
         />
 
         <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">

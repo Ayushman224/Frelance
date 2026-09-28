@@ -4,8 +4,8 @@
  */
 export const site = {
   name: "Clitchly",
-  title: "Web Development & Automation",
-  tagline: "Web Development & Automation",
+  title: "Websites, SEO, Ads & Automation",
+  tagline: "Websites, SEO, Ads & Automation",
   domain: "clitchly.vercel.app",
   email: "ayushmantripathi224@gmail.com",
   // WhatsApp in international format, digits only (no +)
@@ -18,9 +18,9 @@ export const site = {
     linkedin: "https://www.linkedin.com/in/YOUR-PROFILE",
     github: "https://github.com/YOUR-USERNAME",
   },
-  defaultTitle: "Clitchly | Web Development, Automation & AI Agents",
+  defaultTitle: "Clitchly | Websites, SEO, Ads, Social Media & Automation",
   defaultDescription:
-    "Professional websites, AI agents and business automation for small businesses and startups.",
+    "Clitchly builds websites, runs paid ads, manages social media and improves Google visibility — plus AI agents and automation for small businesses.",
 } as const;
 
 export const whatsappUrl = `https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(site.whatsappMessage)}`;
