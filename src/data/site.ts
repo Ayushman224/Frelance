@@ -8,10 +8,9 @@ export const site = {
   tagline: "Web Development & Automation",
   // TODO: replace with your real domain
   domain: "YOURDOMAIN.com",
-  // TODO: replace with your real email address
-  email: "hello@YOURDOMAIN.com",
-  // TODO: replace with your WhatsApp number in international format, digits only (e.g. 919876543210)
-  whatsappNumber: "YOURNUMBER",
+  email: "ayushmantripathi224@gmail.com",
+  // WhatsApp in international format, digits only (no +)
+  whatsappNumber: "918318007109",
   whatsappMessage: "Hi Ayushman, I'd like to discuss a project for my business.",
   // TODO: add a professional portrait to /public (e.g. "/portrait.webp"). Leave empty to show the monogram placeholder.
   portrait: "" as string,
